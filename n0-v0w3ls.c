@@ -18,6 +18,9 @@ int main(int argc, string argv[])
         return 1;
     }
     string word = argv[1];
+    string converted_word = replace(word);
+
+    printf("%s\n", converted_word);
 }
 
 string replace(string word)
