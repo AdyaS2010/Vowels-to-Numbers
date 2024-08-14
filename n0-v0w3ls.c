@@ -22,5 +22,28 @@ int main(int argc, string argv[])
 
 string replace(string word)
 {
-
+    for (int i = 0; i < strlen(word); i++)
+    {
+        switch (tolower(word[i]))
+        {
+            case 'a':
+                word[i] = '6';
+                break;
+            case 'e':
+                word[i] = '3';
+                break;
+            case 'i':
+                word[i] = '1';
+                break;
+            case 'o':
+                word[i] = '0';
+                break;
+            case 'u':
+                word[i] = 'u';
+                break;
+            default:
+                break;
+        }
+    }
+    return word;
 }
